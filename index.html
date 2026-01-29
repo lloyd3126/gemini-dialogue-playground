@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini 圖文生成工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Gemini 圖文生成工具</h1>
+            <p class="subtitle">自訂對話內容控制回應風格</p>
+        </header>
+
+        <!-- API 設定區 -->
+        <section class="config-section">
+            <div class="form-group">
+                <label for="apiKey">Gemini API Key</label>
+                <input type="password" id="apiKey" placeholder="輸入你的 API Key...">
+            </div>
+        </section>
+
+        <!-- 對話內容區 -->
+        <section class="contents-section">
+            <div id="contentsContainer">
+                <!-- 動態新增的對話內容會放這裡 -->
+            </div>
+            <div class="config-actions">
+                <button type="button" id="clearAllBtn" class="btn-clear-all btn-remove">清除全部</button>
+            </div>
+        </section>
+
+        <!-- 錯誤訊息區 -->
+        <div class="error-message" id="errorMessage" style="display: none;"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
